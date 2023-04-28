@@ -5,7 +5,7 @@ raiz = Tk()
 boton = ttk.Button(raiz, text="Botón sólo texto")
 boton.grid()
 
-imagen = PhotoImage(file="a.jpeg")
+imagen = PhotoImage(file="front ellipse_pink.png")
 
 btnImagen = ttk.Button(raiz)
 btnImagen.grid()

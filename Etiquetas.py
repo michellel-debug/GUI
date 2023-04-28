@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 
 raiz = Tk()
-etqTexto = ttk.Label(raiz, text="ellipse")
+etqTexto = ttk.Label(raiz, text="Etiqueta sólo texto")
 etqTexto.grid()
 
 imagen = PhotoImage(file="front ellipse_pink.png")
