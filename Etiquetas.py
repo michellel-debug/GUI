@@ -2,10 +2,10 @@ from tkinter import *
 from tkinter import ttk
 
 raiz = Tk()
-etqTexto = ttk.Label(raiz, text="a")
+etqTexto = ttk.Label(raiz, text="ellipse")
 etqTexto.grid()
 
-imagen = PhotoImage(file="a.jpeg")
+imagen = PhotoImage(file="front ellipse_pink.png")
 
 etqImagen = ttk.Label(raiz)
 etqImagen.grid()
