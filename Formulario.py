@@ -11,7 +11,6 @@ marcoPrincipal.config(width=480,height=320)
 marcoSecond = ttk.Frame(marcoPrincipal)
 marcoSecond.pack()
 
-raiz.config(bg="lightblue") 
 marcoSecond.config(relief="sunken")
 marcoSecond.config(width=300,height=280) 
 
@@ -46,9 +45,9 @@ txtMovil.grid(column=1, row=4)
 ttk.Label(marcoSecond, text="Movil").grid(column=0, row=4)
 
 ocupación = StringVar()
-Estudiante = ttk.Radiobutton(marcoPrincipal, text="Estudiante", variable=ocupación, value="Estudiante")
-Empleado = ttk.Radiobutton(marcoPrincipal, text="Empleado", variable=ocupación, value="Empleado")
-Desempleado = ttk.Radiobutton(marcoPrincipal, text="Desempleado", variable=ocupación, value="Desempleado")
+Estudiante = ttk.Radiobutton(raiz, text="Estudiante", variable=ocupación, value="Estudiante")
+Empleado = ttk.Radiobutton(raiz, text="Empleado", variable=ocupación, value="Empleado")
+Desempleado = ttk.Radiobutton(raiz, text="Desempleado", variable=ocupación, value="Desempleado")
 
 #comboEstados = ttk.Combobox(raiz, textvariable=Estados)
 #comboEstados.grid(column=3, row=1, padx= 40, pady= 20)
