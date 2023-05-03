@@ -4,12 +4,15 @@ from tkinter import ttk
 raiz = Tk()
 raiz.title("Formulario")
 
+Estados = StringVar()
+
 marcoPrincipal = ttk.Frame(raiz, padding= "30 30 30 30")
 marcoPrincipal.grid(column=0, row=0)
 marcoPrincipal.config(width=480,height=320)
+marcoPrincipal.pack()
 
 marcoSecond = ttk.Frame(marcoPrincipal)
-marcoSecond.pack()
+
 
 marcoSecond.config(relief="sunken")
 marcoSecond.config(width=300,height=280) 
@@ -49,19 +52,19 @@ Estudiante = ttk.Radiobutton(raiz, text="Estudiante", variable=ocupación, value
 Empleado = ttk.Radiobutton(raiz, text="Empleado", variable=ocupación, value="Empleado")
 Desempleado = ttk.Radiobutton(raiz, text="Desempleado", variable=ocupación, value="Desempleado")
 
-#comboEstados = ttk.Combobox(raiz, textvariable=Estados)
-#comboEstados.grid(column=3, row=1, padx= 40, pady= 20)
-#comboEstados['values'] = ("Jalisco", "Nayarit", "Colima", "Michoacan")
+comboEstados = ttk.Combobox(raiz, textvariable=Estados)
+comboEstados.grid(column=3, row=1, padx=30, pady=30)
+comboEstados['values'] = ("Jalisco", "Nayarit", "Colima", "Michoacan")
 
-#chkBoton = ttk.Checkbutton(raiz, text="Leer")
-#chkBoton.grid(column=0, row=2)
-#chkBoton = ttk.Checkbutton(raiz, text="Música")
-#chkBoton.grid(column=1, row=2)
-#chkBoton = ttk.Checkbutton(raiz, text="Videojuegos")
-#chkBoton.grid(column=2, row=2)
+chkBoton = ttk.Checkbutton(raiz, text="Leer")
+chkBoton.grid(column=0, row=5)
+chkBoton = ttk.Checkbutton(raiz, text="Música")
+chkBoton.grid(column=1, row=5)
+chkBoton = ttk.Checkbutton(raiz, text="Videojuegos")
+chkBoton.grid(column=2, row=5)
 
-#ttk.Button(marcoPrincipal, text="Guardar").grid(column=0, row=3)
-#ttk.Button(marcoPrincipal, text="Cancelar").grid(column=2, row=3)
+ttk.Button(marcoPrincipal, text="Guardar").grid(column=0, row=6)
+ttk.Button(marcoPrincipal, text="Cancelar").grid(column=2, row=6)
 
 
 txtName.focus()
