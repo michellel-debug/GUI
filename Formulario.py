@@ -9,13 +9,13 @@ Estados = StringVar()
 marcoPrincipal = ttk.Frame(raiz, padding= "30 30 30 30")
 marcoPrincipal.grid(column=0, row=0)
 marcoPrincipal.config(width=480,height=320)
-marcoPrincipal.pack()
+
 
 marcoSecond = ttk.Frame(marcoPrincipal)
 
 
 marcoSecond.config(relief="sunken")
-marcoSecond.config(width=300,height=280) 
+
 
 #Textbox nombre
 txtName = ttk.Entry(marcoSecond, width=20)
@@ -63,8 +63,6 @@ chkBoton.grid(column=1, row=5)
 chkBoton = ttk.Checkbutton(raiz, text="Videojuegos")
 chkBoton.grid(column=2, row=5)
 
-ttk.Button(marcoPrincipal, text="Guardar").grid(column=0, row=6)
-ttk.Button(marcoPrincipal, text="Cancelar").grid(column=2, row=6)
 
 
 txtName.focus()
