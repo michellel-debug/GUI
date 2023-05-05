@@ -13,7 +13,7 @@ marcoSecundario.grid(column=0, row=0)
 
 #Textbox nombre    
 txtName = ttk.Entry(marcoSecundario, width=20)
-txtName.grid(column=1, row=0)
+txtName.grid(column=1, row=0, pady=10, padx=10)
 
 tk.Label(marcoSecundario, text="Nombre", bg='white').grid(column=0, row=0, pady=10, padx=10, sticky=W)     
 
